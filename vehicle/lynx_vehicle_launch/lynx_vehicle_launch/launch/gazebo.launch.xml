@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="entity_name" default="lynx_vehicle"/>
+
+  <let name="description_share" value="$(find-pkg-share lynx_vehicle_description)"/>
+  <let name="urdf_path" value="$(var description_share)/urdf/vehicle_with_sensor_6.urdf"/>
+
+  <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py"/>
+
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="tf_footprint_base" args="0 0 0 0 0 0 base_link base_footprint"/>
+
+  <node pkg="gazebo_ros" exec="spawn_entity.py" name="spawn_lynx_vehicle" output="screen" args="-entity $(var entity_name) -file $(var urdf_path)"/>
+</launch>

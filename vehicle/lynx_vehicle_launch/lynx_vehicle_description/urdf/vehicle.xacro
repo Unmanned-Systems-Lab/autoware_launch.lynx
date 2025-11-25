@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vehicle_with_sensor_6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.167395896687544 0.00250976078833724 0.543315595110866"
+        rpy="0 0 0" />
+      <mass
+        value="93.3978584806246" />
+      <inertia
+        ixx="3.61638219426436"
+        ixy="-0.00828065366308704"
+        ixz="-0.0176863930033202"
+        iyy="20.7970360741066"
+        iyz="-0.00539211648739577"
+        izz="22.6877144035232" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fr_left_link">
+    <inertial>
+      <origin
+        xyz="-7.46974191773422E-06 -1.19482287440319E-05 -0.000179990931993168"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836783021962" />
+      <inertia
+        ixx="0.874311017288933"
+        ixy="0.000347169705029457"
+        ixz="-2.19352232917206E-05"
+        iyy="0.874488490062182"
+        iyz="1.82797234968378E-05"
+        izz="1.49279585199495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/fr_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/fr_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_left_joint"
+    type="continuous">
+    <origin
+      xyz="1.0200000000049 0.719999946875 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="fr_right_link">
+    <inertial>
+      <origin
+        xyz="-7.40835438473531E-06 1.18145932097649E-05 0.000236009103067758"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836779846589" />
+      <inertia
+        ixx="0.87417041937025"
+        ixy="-0.000259006018623985"
+        ixz="9.2937751485304E-06"
+        iyy="0.874558081192973"
+        iyz="3.83172363672905E-05"
+        izz="1.4927248601265" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/fr_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.823529411764706 0.823529411764706 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/fr_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_right_joint"
+    type="continuous">
+    <origin
+      xyz="1.02000000099569 -0.7201500331829 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="mid_left_link">
+    <inertial>
+      <origin
+        xyz="-7.48314283931103E-06 -1.19373280806911E-05 -0.000179991717028982"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836802548913" />
+      <inertia
+        ixx="0.874310982727273"
+        ixy="0.000347230189145692"
+        ixz="-2.19508083857864E-05"
+        iyy="0.874488723641317"
+        iyz="1.82715067770737E-05"
+        izz="1.49279603559854" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/mid_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/mid_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.719999946875 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mid_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="mid_right_link">
+    <inertial>
+      <origin
+        xyz="-7.39936940025315E-06 1.17858413219984E-05 0.000236016709631359"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836785314311" />
+      <inertia
+        ixx="0.8741704426353"
+        ixy="-0.000259083324030287"
+        ixz="9.28509037303237E-06"
+        iyy="0.874558158701316"
+        iyz="3.83126056266996E-05"
+        izz="1.49272492625053" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/mid_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.823529411764706 0.823529411764706 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/mid_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.7201500331829 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mid_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="re_left_link">
+    <inertial>
+      <origin
+        xyz="-7.43506353266857E-06 -1.19494825225885E-05 -0.000179985707534747"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836782310983" />
+      <inertia
+        ixx="0.874310873270932"
+        ixy="0.000347231029777594"
+        ixz="-2.19579762920221E-05"
+        iyy="0.87448867819917"
+        iyz="1.82617349957619E-05"
+        izz="1.492795851782" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/re_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/re_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="re_left_joint"
+    type="continuous">
+    <origin
+      xyz="-1.02 0.719999946875 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="re_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="re_right_link">
+    <inertial>
+      <origin
+        xyz="-7.40687126886166E-06 1.17729250144194E-05 0.000236014825648168"
+        rpy="0 0 0" />
+      <mass
+        value="15.6836777442921" />
+      <inertia
+        ixx="0.874170436345245"
+        ixy="-0.000259194408570592"
+        ixz="9.29280456193285E-06"
+        iyy="0.874558114305502"
+        iyz="3.83003270857082E-05"
+        izz="1.49272486005224" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/re_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.823529411764706 0.823529411764706 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/re_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="re_right_joint"
+    type="continuous">
+    <origin
+      xyz="-1.01999999900801 -0.7201500331829 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="re_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="M1_link">
+    <inertial>
+      <origin
+        xyz="0.189311992238699 -0.00780975821322617 0.0304403534135942"
+        rpy="0 0 0" />
+      <mass
+        value="0.182379159282172" />
+      <inertia
+        ixx="0.0601792897752239"
+        ixy="3.68389245599875E-06"
+        ixz="-1.91981971038898E-06"
+        iyy="0.00624313141365268"
+        iyz="-1.01725117757533E-06"
+        izz="0.0604199696244955" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/M1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/M1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M1_joint"
+    type="fixed">
+    <origin
+      xyz="0.828794444577641 0 1.65803698370154"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="M1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ZED_link">
+    <inertial>
+      <origin
+        xyz="-0.0193979346104415 2.17698212671742E-05 0.000203049311098713"
+        rpy="0 0 0" />
+      <mass
+        value="0.16807951672626" />
+      <inertia
+        ixx="0.000384913598088011"
+        ixy="7.22943572804795E-09"
+        ixz="9.58941056097699E-08"
+        iyy="3.26812598821181E-05"
+        iyz="1.16689245654961E-09"
+        izz="0.000392812082317333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/ZED_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/ZED_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ZED_joint"
+    type="fixed">
+    <origin
+      xyz="0.900553079267527 0 1.73767616379679"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ZED_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IMU_link">
+    <inertial>
+      <origin
+        xyz="-0.00201732233979521 -0.00773842436009968 0.000686469708683912"
+        rpy="0 0 0" />
+      <mass
+        value="0.00544960785791132" />
+      <inertia
+        ixx="4.66070990345166E-07"
+        ixy="-2.33208488660251E-09"
+        ixz="1.2931476622232E-08"
+        iyy="3.43737275791415E-07"
+        iyz="-1.46113385306212E-09"
+        izz="7.42903804634427E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/IMU_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/IMU_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IMU_joint"
+    type="fixed">
+    <origin
+      xyz="0.803059303957121 0.00774044003851427 1.74459522104739"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="IMU_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="VRTK2_link">
+    <inertial>
+      <origin
+        xyz="-0.0203989372130096 0.000535577750240961 0.0153793934004181"
+        rpy="0 0 0" />
+      <mass
+        value="0.118074976171714" />
+      <inertia
+        ixx="0.000130079745512239"
+        ixy="1.74327822433897E-06"
+        ixz="3.76889562431176E-06"
+        iyy="0.000194644173371937"
+        iyz="2.14927757093795E-07"
+        izz="0.000313181030320286" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/VRTK2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/VRTK2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="VRTK2_joint"
+    type="fixed">
+    <origin
+      xyz="0.829404896869101 0 1.77805054006567"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="VRTK2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Helios_link">
+    <inertial>
+      <origin
+        xyz="-0.00388158736134572 -7.80801533527548E-05 0.030545646507137"
+        rpy="0 0 0" />
+      <mass
+        value="0.113882797735482" />
+      <inertia
+        ixx="0.000125339941051341"
+        ixy="1.11004921898786E-07"
+        ixz="1.80771181492543E-06"
+        iyy="0.000124081102965929"
+        iyz="-2.90989005466806E-08"
+        izz="0.000195587034662509" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/Helios_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/Helios_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Helios_joint"
+    type="fixed">
+    <origin
+      xyz="0.802736208230059 0 1.84262349956977"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Helios_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RAS6_link">
+    <inertial>
+      <origin
+        xyz="0.00696913067546914 7.78791157878314E-05 0.109613629745835"
+        rpy="0 0 0" />
+      <mass
+        value="6.04346636420139" />
+      <inertia
+        ixx="0.0485237600581944"
+        ixy="3.13041823828203E-05"
+        ixz="0.000173112848372716"
+        iyy="0.0458436248251177"
+        iyz="1.17973267123476E-05"
+        izz="0.0530855521593215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/RAS6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/RAS6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RAS6_joint"
+    type="fixed">
+    <origin
+      xyz="0.80518768517901 0 1.95959781410393"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RAS6_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="GPS_L_link">
+    <inertial>
+      <origin
+        xyz="0.000322658607992909 -2.34086533490441E-08 0.0153959308141751"
+        rpy="0 0 0" />
+      <mass
+        value="0.152364991944086" />
+      <inertia
+        ixx="6.73802959909088E-05"
+        ixy="-1.02559160516287E-12"
+        ixz="6.7453420840728E-07"
+        iyy="6.73661595109383E-05"
+        iyz="-4.8936978605903E-11"
+        izz="9.95521348642993E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/GPS_L_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/GPS_L_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="GPS_L_joint"
+    type="fixed">
+    <origin
+      xyz="0.798482147549637 0.580000596935895 1.63966896029248"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="GPS_L_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="GPS_R_link">
+    <inertial>
+      <origin
+        xyz="0.000322658607992854 -2.34086533490441E-08 0.0153959308141753"
+        rpy="0 0 0" />
+      <mass
+        value="0.152364991944086" />
+      <inertia
+        ixx="6.73802959909089E-05"
+        ixy="-1.02559160565683E-12"
+        ixz="6.7453420840728E-07"
+        iyy="6.73661595109383E-05"
+        iyz="-4.89369786292034E-11"
+        izz="9.95521348642994E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/GPS_R_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/GPS_R_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="GPS_R_joint"
+    type="fixed">
+    <origin
+      xyz="0.798483434369692 -0.57999940306201 1.63966716960885"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="GPS_R_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="head_link">
+    <inertial>
+      <origin
+        xyz="0.311644124214917 -1.82202012511817E-05 1.24681187163694"
+        rpy="0 0 0" />
+      <mass
+        value="11.0075487021242" />
+      <inertia
+        ixx="0.271954645242539"
+        ixy="-8.7105556905226E-07"
+        ixz="0.042903787538524"
+        iyy="0.0971969462029432"
+        iyz="-6.81382589728224E-07"
+        izz="0.234218903622788" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/head_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/head_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_joint"
+    type="fixed">
+    <origin
+      xyz="1.04999986282 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="head_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bracket_link">
+    <inertial>
+      <origin
+        xyz="-0.250305782019541 3.30718197498007E-07 1.66810917009753"
+        rpy="0 0 0" />
+      <mass
+        value="7.96306441964764" />
+      <inertia
+        ixx="0.289647386023847"
+        ixy="3.00907732733522E-07"
+        ixz="0.000204093866609766"
+        iyy="0.0158953504785491"
+        iyz="-4.35071895077141E-07"
+        izz="0.299381558063489" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/bracket_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.564705882352941 0.564705882352941 0.564705882352941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lynx_vehicle_description/meshes/bracket_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bracket_joint"
+    type="fixed">
+    <origin
+      xyz="1.04999986282 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bracket_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
