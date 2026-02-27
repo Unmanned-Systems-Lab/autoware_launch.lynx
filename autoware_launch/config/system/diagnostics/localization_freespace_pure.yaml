@@ -1,0 +1,10 @@
+units:
+  - path: /autoware/localization
+    type: and
+    list:
+      - { type: link, link: /autoware/localization/topic_rate_check/transform }
+
+  - path: /autoware/localization/topic_rate_check/transform
+    type: diag
+    node: topic_state_monitor_transform_map_to_base_link
+    name: localization_topic_status

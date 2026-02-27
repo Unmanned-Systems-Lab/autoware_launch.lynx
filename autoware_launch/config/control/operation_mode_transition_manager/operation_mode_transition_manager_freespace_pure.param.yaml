@@ -1,0 +1,27 @@
+/**:
+  ros__parameters:
+    input_timeout: 10.0
+    transition_timeout: 10.0
+    frequency_hz: 10.0
+
+    # Keep default safety behavior unchanged.
+    enable_engage_on_driving: true
+
+    check_engage_condition: false
+    nearest_dist_deviation_threshold: 3.0
+    nearest_yaw_deviation_threshold: 1.57
+    engage_acceptable_limits:
+      allow_autonomous_in_stopped: true
+      dist_threshold: 1.5
+      yaw_threshold: 0.524
+      speed_upper_threshold: 10.0
+      speed_lower_threshold: -10.0
+      acc_threshold: 1.5
+      lateral_acc_threshold: 1.0
+      lateral_acc_diff_threshold: 0.5
+    stable_check:
+      duration: 0.1
+      dist_threshold: 1.5
+      speed_upper_threshold: 2.0
+      speed_lower_threshold: -2.0
+      yaw_threshold: 0.262

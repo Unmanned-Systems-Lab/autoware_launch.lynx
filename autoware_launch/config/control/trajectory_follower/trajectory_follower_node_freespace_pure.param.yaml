@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    ctrl_period: 0.03
+    # Pure freespace planning often republishes trajectory at a lower rate than lane-driving.
+    timeout_thr_sec: 10.0

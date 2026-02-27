@@ -1,0 +1,10 @@
+units:
+  - path: /autoware/planning
+    type: and
+    list:
+      - { type: link, link: /autoware/planning/topic_rate_check/trajectory }
+
+  - path: /autoware/planning/topic_rate_check/trajectory
+    type: diag
+    node: topic_state_monitor_scenario_planning_trajectory
+    name: planning_topic_status
